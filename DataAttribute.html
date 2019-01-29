@@ -18,6 +18,18 @@
         [data-vegetable~='spicy']{
             color: red;
         }
+        [lang|='fr']{
+            font-weight: bold;
+        }
+        [data-quantity^='optional']{
+            opacity: 0.5;
+        }
+        [data-vegetable*='not spicy']{
+            color: blue
+        }
+        [data-quantity$='kg']{
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -30,7 +42,7 @@
         </li>
         <li data-quantity="3" data-vegetable>Onions</li>
         <li data-quantity='3' data-vegetable>Garlic</li>
-        <li data-quantity="700g" data-vegetable="Not spicy like chili">Red Paper</li>
+        <li data-quantity="700g" data-vegetable="not spicy like chili">Red Paper</li>
         <li data-quantity="2kg" data-meat>Chicken</li>
         <li data-quantity="optional 150gm" data-meat>Backon bits</li>
         <li data-quantity="optional 10ml" data-vegetable="liquid">Olive oil</li>
